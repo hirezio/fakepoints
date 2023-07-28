@@ -1,11 +1,11 @@
 import { TestContext } from 'vitest';
 
+import { type FakeDb } from '../fakepoints/fake-db';
 import {
   SetupFakepointsFn,
   setupFakepointsFactory,
   type OriginalMockServiceWorker
-} from '../fakepoints/create-fakepoints-fixture';
-import { type FakeDb } from '../fakepoints/fake-db';
+} from './create-fakepoints-fixture';
 
 export type FakepointsFixture = () => (
   context: {
